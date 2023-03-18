@@ -34,4 +34,10 @@
         android:layout_height="wrap_content"
         android:text="Intent Practice"/>
 
+    <Button
+        android:id="@+id/viewPracticeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View and View Group Practice"/>
+
 </LinearLayout>

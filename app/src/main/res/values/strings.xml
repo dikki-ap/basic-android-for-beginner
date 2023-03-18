@@ -5,6 +5,30 @@
     <!--  "d" for decimal, "s" for string  -->
     <string name="other_text">Other Text %1$s</string>
 
+    <string name="content_text">Pelajari dasar bahasa pemrograman, functional programming, object-oriented programming (OOP), serta concurrency dengan menggunakan Kotlin.</string>
+    <string name="content_specs_display">5.0 inches\n
+    FHD AMOLED at 441ppi\n
+    2.5D Corning® Gorilla® Glass 4</string>
+    <string name="content_specs_size">5.6 x 2.7 x 0.2 ~ 0.3 inches 143.8 x 69.5 x 7.3 ~ 8.5 mm</string>
+    <string name="content_specs_battery">2,770 mAh battery\n
+    Standby time (LTE): up to 19 days\n
+    Talk time (3g/WCDMA): up to 26 hours\n
+    Internet use time (Wi-Fi): up to 13 hours\n
+    Internet use time (LTE): up to 13 hours\n
+    Video playback: up to 13 hours\n
+    Audio playback (via headset): up to 110 hours\n
+    Fast charging: up to 7 hours of use from only 15 minutes of charging</string>
+    <string name="stock">Certificate</string>
+    <string name="specification">Specification</string>
+    <string name="display">Display</string>
+    <string name="size">Size</string>
+    <string name="battery">Battery</string>
+    <string name="seller">Owned By</string>
+    <string name="my_name">Dikki AP</string>
+    <string name="buy">Buy</string>
+    <string name="dummy_value">Dicoding - Memulai Pemrograman dengan Kotlin</string>
+    <string name="dummy_photos">6 photos</string>
+
     <!--  U can make an Array to in String Resources  -->
     <string-array name="names">
         <item>Dikki</item>

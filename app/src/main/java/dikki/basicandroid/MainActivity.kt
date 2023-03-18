@@ -10,6 +10,7 @@ import android.widget.EditText
 import android.widget.TextView
 import dikki.basicandroid.activity.BarVolumeActivity
 import dikki.basicandroid.intent.IntentActivity
+import dikki.basicandroid.view.ViewActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,6 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appNameTextView: TextView
     private lateinit var activityPracticeButton: Button
     private lateinit var intentPracticeButton: Button
+    private lateinit var viewPracticeButton : Button
 
     // Making all components into 1 Function so u already implement DRY Principle
     private fun initComponents(){
@@ -29,6 +31,7 @@ class MainActivity : AppCompatActivity() {
         nameTextView = findViewById(R.id.nameTextView)
         activityPracticeButton = findViewById(R.id.activityPracticeButton)
         intentPracticeButton = findViewById(R.id.intentPracticeButton)
+        viewPracticeButton = findViewById(R.id.viewPracticeButton)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -80,6 +83,11 @@ class MainActivity : AppCompatActivity() {
 
         intentPracticeButton.setOnClickListener {
             var moveIntent = Intent(this@MainActivity, IntentActivity::class.java)
+            startActivity(moveIntent)
+        }
+
+        viewPracticeButton.setOnClickListener {
+            var moveIntent = Intent(this@MainActivity, ViewActivity::class.java)
             startActivity(moveIntent)
         }
     }
