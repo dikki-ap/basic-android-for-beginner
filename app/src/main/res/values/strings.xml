@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Basic Android</string>
+
+    <!--  U can use "%index$type to add params in String Resources  -->
+    <!--  "d" for decimal, "s" for string  -->
+    <string name="other_text">Other Text %1$s</string>
+
+    <!--  U can make an Array to in String Resources  -->
+    <string-array name="names">
+        <item>Dikki</item>
+        <item>Agresia</item>
+        <item>Janan</item>
+    </string-array>
+
+    <!--  U can add another Data Type into this String Resources, u can see the documentation  -->
+</resources>
