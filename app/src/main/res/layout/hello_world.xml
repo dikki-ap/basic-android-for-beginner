@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
+    android:padding="16dp"
     android:layout_gravity="center_vertical">
 
     <ImageView
@@ -20,5 +21,17 @@
 
     <!--  U can add another Layout into this layout using "include"  -->
     <include layout="@layout/say_hello_form" />
+
+    <Button
+        android:id="@+id/activityPracticeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activity Practice"/>
+
+    <Button
+        android:id="@+id/intentPracticeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intent Practice"/>
 
 </LinearLayout>

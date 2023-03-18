@@ -63,7 +63,6 @@ class BarVolumeActivity : AppCompatActivity() {
                 var volume = inputLength.toDouble() * inputWidth.toDouble() * inputHeight.toDouble()
                 resultTextView.text = volume.toString()
             }
-
         }
 
         // U can call savedInstanceState if u have the value when something happen2

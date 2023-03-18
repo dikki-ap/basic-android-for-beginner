@@ -17,6 +17,7 @@
 
         <EditText
             android:id="@+id/lengthEditText"
+            android:inputType="numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"/>
@@ -29,6 +30,7 @@
 
         <EditText
             android:id="@+id/widthEditText"
+            android:inputType="numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"/>
@@ -41,6 +43,7 @@
 
         <EditText
             android:id="@+id/heightEditText"
+            android:inputType="numberDecimal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"/>
@@ -57,7 +60,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=""
+            android:text="Result"
             android:textSize="24dp"/>
 
     </LinearLayout>

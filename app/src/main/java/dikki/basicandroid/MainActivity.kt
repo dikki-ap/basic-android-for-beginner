@@ -1,5 +1,6 @@
 package dikki.basicandroid
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -7,6 +8,8 @@ import android.widget.Button
 import android.widget.CheckedTextView
 import android.widget.EditText
 import android.widget.TextView
+import dikki.basicandroid.activity.BarVolumeActivity
+import dikki.basicandroid.intent.IntentActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -15,6 +18,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var sayHelloButton: Button
     private lateinit var nameTextView: TextView
     private lateinit var appNameTextView: TextView
+    private lateinit var activityPracticeButton: Button
+    private lateinit var intentPracticeButton: Button
 
     // Making all components into 1 Function so u already implement DRY Principle
     private fun initComponents(){
@@ -22,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         nameEditText = findViewById(R.id.nameEditText)
         sayHelloButton = findViewById(R.id.sayHelloButton)
         nameTextView = findViewById(R.id.nameTextView)
+        activityPracticeButton = findViewById(R.id.activityPracticeButton)
+        intentPracticeButton = findViewById(R.id.intentPracticeButton)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -64,6 +71,16 @@ class MainActivity : AppCompatActivity() {
             resources.getStringArray(R.array.names).forEach {
                 Log.i("StringArrayResources", it)
             }
+        }
+
+        activityPracticeButton.setOnClickListener {
+            var moveIntent = Intent(this@MainActivity, BarVolumeActivity::class.java)
+            startActivity(moveIntent)
+        }
+
+        intentPracticeButton.setOnClickListener {
+            var moveIntent = Intent(this@MainActivity, IntentActivity::class.java)
+            startActivity(moveIntent)
         }
     }
 }
