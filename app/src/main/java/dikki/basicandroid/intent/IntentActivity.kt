@@ -10,10 +10,12 @@ class IntentActivity : AppCompatActivity() {
 
     private lateinit var moveButton: Button
     private lateinit var moveDataButton: Button
+    private lateinit var moveObjectButton: Button
 
     private fun initComponents(){
         moveButton = findViewById(R.id.moveButton)
         moveDataButton = findViewById(R.id.moveDataButton)
+        moveObjectButton = findViewById(R.id.moveObjectButton)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -45,6 +47,18 @@ class IntentActivity : AppCompatActivity() {
             startActivity(moveWithDataIntent)
             // finish()
             // U can add "finish()" if u dont want to go back to previous Intent
+        }
+
+        moveObjectButton.setOnClickListener {
+            val person = Person(
+                "Dikki AP",
+                22,
+                "dikki.ap@gmail.com",
+                "Medan"
+            )
+            val moveWithObjectIntent = Intent(this@IntentActivity, IntentObject::class.java)
+            moveWithObjectIntent.putExtra(IntentObject.EXTRA_PERSON, person)
+            startActivity(moveWithObjectIntent)
         }
     }
 }
