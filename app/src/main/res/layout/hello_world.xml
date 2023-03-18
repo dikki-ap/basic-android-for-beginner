@@ -40,4 +40,10 @@
         android:layout_height="wrap_content"
         android:text="View and View Group Practice"/>
 
+    <Button
+        android:id="@+id/rvPracticeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Recycler View Practice"/>
+
 </LinearLayout>

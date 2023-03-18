@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var activityPracticeButton: Button
     private lateinit var intentPracticeButton: Button
     private lateinit var viewPracticeButton : Button
+    private lateinit var rvPracticeButton : Button
 
     // Making all components into 1 Function so u already implement DRY Principle
     private fun initComponents(){
@@ -32,6 +33,7 @@ class MainActivity : AppCompatActivity() {
         activityPracticeButton = findViewById(R.id.activityPracticeButton)
         intentPracticeButton = findViewById(R.id.intentPracticeButton)
         viewPracticeButton = findViewById(R.id.viewPracticeButton)
+        rvPracticeButton = findViewById(R.id.rvPracticeButton)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -88,6 +90,11 @@ class MainActivity : AppCompatActivity() {
 
         viewPracticeButton.setOnClickListener {
             var moveIntent = Intent(this@MainActivity, ViewActivity::class.java)
+            startActivity(moveIntent)
+        }
+
+        rvPracticeButton.setOnClickListener {
+            var moveIntent = Intent(this@MainActivity, dikki.basicandroid.recyclerview.MainActivity::class.java)
             startActivity(moveIntent)
         }
     }
