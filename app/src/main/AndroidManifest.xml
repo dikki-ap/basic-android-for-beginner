@@ -13,6 +13,13 @@
         android:theme="@style/Theme.BasicAndroid"
         tools:targetApi="31">
         <activity
+            android:name=".intent.IntentActivityData"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".activity.BarVolumeActivity"
             android:exported="false">
             <meta-data
