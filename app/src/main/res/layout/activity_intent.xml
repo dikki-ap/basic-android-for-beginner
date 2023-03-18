@@ -35,4 +35,24 @@
         android:lineHeight="24dp"
         android:text="Move to Another Activity with Object (Using Parcelable)"/>
 
+    <Button
+        android:id="@+id/dialButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dial Number (Using Implicit Intent)"/>
+
+    <Button
+        android:id="@+id/moveResultButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Move to Another Activity to Get Result from Another Activity"/>
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24dp"
+        android:layout_marginTop="24dp"/>
+
 </LinearLayout>
